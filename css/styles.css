@@ -96,6 +96,7 @@ a {
 }
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -189,6 +190,10 @@ a {
 .btn--accent:hover {
   background: #ec3000;
 }
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -256,6 +261,9 @@ a {
 .card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
+}
+.card--secondary .badge--secondary {
+  background: #02cdf1;
 }
 /* Plans */
 .plan__name {
@@ -374,7 +382,7 @@ a {
   display: grid;
 }
 @media screen and (min-width: 768px) {
-  .grid__1x2 {
+  .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -403,5 +411,38 @@ a {
 @media screen and (min-width: 768px) {
   .testimonial .quote {
     margin-left: 6rem;
+  }
+}
+/* CALLOUTS */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.callout__heading {
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 0;
+}
+.callout__content {
+  text-align: center;
+}
+.callout .btn {
+  align-self: center;
+  justify-self: center;
+}
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin-left: 2rem;
+  }
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
   }
 }
