@@ -24,7 +24,23 @@
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
         <div>
-          <img class="hero__image" src="/images/banner.png" alt="" />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                /images/Resized/banner.webp    1x,
+                /images/Resized/banner@2x.webp 2x
+              "
+            />
+            <source
+              type="image/png"
+              srcset="
+                /images/Resized/banner.png    1x,
+                /images/Resized/banner@2x.png 2x
+              "
+            />
+            <img class="hero__image" src="/images/Resized/banner.png" alt="" />
+          </picture>
         </div>
       </div>
     </section>
