@@ -2,6 +2,8 @@
 
 This is a fully functional and responsive clone of the original Moshify cloud hosting website. Built with attention to detail, the project replicates the website's design and animations while following clean coding principles. The site was developed using a bottom-to-top approach, where individual components were built in isolation before integrating them into the final project.
 
+![Moshify Preview](./image/Moshify-thumbnail.jpeg)
+
 ## Live Demo
 The site is hosted live on Netlify. You can view it here: [Moshify Clone](https://moshify-by-saqib.netlify.app/)
 
